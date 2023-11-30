@@ -2,7 +2,6 @@ body{
     background-image: linear-gradient(to left bottom, #ffffff, #d0cedb, #a29fb7, #747395, #484a74, #3c4b79, #2a4c7e, #004d82, #0077a9, #00a2c9, #00cfe1, #5ffbf1);}
 header{
  background-color:#B5C5E3;
-
  width:100%
 }
 .container{
@@ -43,17 +42,20 @@ header{
     justify-content:center;
     align-content:center;
     height:50%
+    
     }
    
 #listepatient ul{ 
     width:40%;
     list-style: none;
     
+    
 }
 li{
     margin-top:30px;
-    border:solid;
+    border-raduis:5px;
     height:auto;
+    background-color:white;
 }
 span{
 }
@@ -71,6 +73,7 @@ padding-left:40px;
     width: 400px;
     margin-left:400px;
     padding: 20px;
+    margin-bottom:40px;
 }
 .consultation h4{
     font-size: 1.5em;
@@ -96,8 +99,23 @@ img{
 }
 button{
     border-radius:5px;
-    
+    cursor:pointer;
     padding:15px;
     margin-left:100px;
     margin-top:40px;
+}
+.signup{
+    text-align:center;
+    padding:50px;
+    border-raduis:5px;
+    margin-bottom:-500px;
+    background-image: linear-gradient(to left top, #ffffff, #d0cedb, #a29fb7, #747395, #484a74, #3c4b79, #2a4c7e, #004d82, #0077a9, #00a2c9, #00cfe1, #5ffbf1);
+}
+.signup a{
+    text-decoration:none;
+    padding:10px;
+    color:white;
+    background-color:#50e0ff;
+    
+    
 }

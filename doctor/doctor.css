@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(to left bottom, #ffffff, #d0cedb, #a29fb7, #747395, #484a74, #3c4b79, #2a4c7e, #004d82, #0077a9, #00a2c9, #00cfe1, #5ffbf1);}
+header{
+ background-color:#B5C5E3;
+
+ width:100%
+}
+.container{
+    display:flex;
+    margin-right:10%;
+}
+.posnav{
+    display:absolute;
+    margin-left:1100px;
+    margin-top:7px;
+
+}
+.posnav .x{
+    display:flex;
+    width:100%;
+}
+.posnav a{
+    display:flex;
+    margin-right:15px;
+    text-decoration: none;
+    color:black;
+}
+.logo span{
+    color:blue;
+}
+.logo{
+    margin:20px;
+    padding-left:50px;
+    text-decoration: none;
+    font-size:26px;
+}
+.logo a{
+    text-decoration: none;
+    color:black;
+}
+#listepatient {
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    height:50%
+    }
+   
+#listepatient ul{ 
+    width:40%;
+    list-style: none;
+    
+}
+li{
+    margin-top:30px;
+    border:solid;
+    height:auto;
+}
+span{
+}
+li span {
+padding-left:40px;
+}
+#updatepatient{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(18rem,auto));
+    gap:2rem;
+    height:40%
+}
+.consultation{
+    height:100%;
+    width: 400px;
+    margin-left:400px;
+    padding: 20px;
+}
+.consultation h4{
+    font-size: 1.5em;
+  margin:10px;
+  margin-bottom:50px;
+  margin-left:70px;
+}
+.consultation input{
+    margin:10px;
+    width:80%;
+    height:40px;
+    border-radius:10px;
+
+}
+input::placeholder{
+   text-align:center; 
+}
+img{
+    width:450px;
+    height:300px;
+    border-radius:4px;
+    margin-left:150px;
+}
+button{
+    border-radius:5px;
+    
+    padding:15px;
+    margin-left:100px;
+    margin-top:40px;
+}

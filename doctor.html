@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+<header> 
+    <div class="container">
+        <div class="logo">
+            <a href="doctor.html"> <span>D</span>octor</a>
+        </div>
+        <div class="posnav">
+            <div class="x">
+                <h4> <a href="#listepatient">Liste Patient</a></h4>
+                <h4><a href="#updatepatient">Update Info Patient</a></h4>
+                 <h4> <a href="#addpatient">Add Patient</a></h4>
+                </div>
+            
+        </div>
+    
+    </div>
+    
+</header>
+<section id="listepatient" class="listepatient">
+    <ul id="add">
+        <li> <span>Name</span> <span>Email</span> <span>Date Appointement</span></li>
+        <li> <span>Name</span> <span>Email</span> <span>Date Appointement</span></li>
+        <li> <span>Name</span> <span>Email</span> <span>Date Appointement</span></li>
+    </ul>
+</section>
 
+<section id="updatepatient" class="updatepatient">
+    <div class="image">
+        <img src="https://img.freepik.com/vecteurs-premium/femme-patiente-consultant-medecin-illustration-vectorielle-hopital-concept-consultation-medecin_36358-174.jpg" alt="">
+    </div>
+    <div class="consultation">
+        <h4 style="color: aliceblue;">Consultation </h4>
+        <input id="patientemail" type="text" placeholder="Email Patiant"><br>
+        <input id="description" type="text" placeholder="Description "> <br>
+        <input id="prescreption" type="text" placeholder="Prescription"> <br>
+        <button id="btupinfo">Confirm</button>
+    </div>
+</section>
+<section id="reservation"> 
+    <div class="consultation">
+        <h4 style="color: aliceblue;">Consultation </h4>
+        <input id="mailpatient" type="text" placeholder="Email Patiant"><br>
+        <input id="dat" type="date" placeholder="date of cosultation "> <br>
+        
+        <button id="btcons">Confirm</button>
+    </div>
+
+</section>
+<section id="addpatient">
+    <div class="signup">
+        <a href="signup.html">Create patient account</a>
+    </div>
+    
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>

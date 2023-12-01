@@ -1,0 +1,70 @@
+body{
+    background-image: radial-gradient(circle, #ffffff, #eeedfa, #dadcf5, #c5cbf1, #acbced, #9bbdf2, #85bef6, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);}
+#patientinformations{
+    border-style: double;
+    width: 250px;
+    height: 710px;
+    position: fixed;
+    border-radius: 5%;
+    
+}
+.visits-upcomingvisits-Diagnosis{
+    display: flex;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    width: 1150px;
+    height: 200px;
+    border-radius: 2%;
+}
+#recap{
+    border-style: double;
+    position: fixed;
+    right: 1%;
+    top: 250px;
+    width: 1150px;
+    height: 468px;
+}
+#avatar{
+    
+    height: 355px;
+}
+#avatar img{
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    left: 30px;
+    border-radius: 100%;
+    
+    
+}
+
+#patientinformations .name   {
+    position: fixed;
+    top: 200px;
+    left: 90px;
+    display: flex;
+    color: black;
+}
+.visits-upcomingvisits-Diagnosis #visits{
+    border-radius: 10%;
+    border-style: double ;
+    position: absolute;
+    width: 300px;
+    margin-left: 50px;
+    height: 150px;
+   }
+.visits-upcomingvisits-Diagnosis #upcamingvisits{
+border-style: double;
+margin-left: 400px;
+width: 300px;
+height: 150px;
+border-radius: 10%;
+}
+.visits-upcomingvisits-Diagnosis #diagnosis{
+border-radius: 10%;
+border-style: double;
+margin-left: 50px;
+width: 300px;
+height: 150px;
+}

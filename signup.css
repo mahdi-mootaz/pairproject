@@ -1,0 +1,57 @@
+body  {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: url("https://static.vecteezy.com/system/resources/thumbnails/023/459/452/small_2x/medical-doctor-background-illustration-ai-generative-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .bordercont{
+    border-radius: 4px;  
+    width: 250px;
+    height: 25px;
+    margin: 20px;
+    
+    }
+    #create-account{
+    background-color: #50e0ff; 
+    border: none;
+    color: #F5FEFD;
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 23%;
+    border-radius: 100px;
+    }
+    #create-account:hover{
+    background-color: black;
+    cursor: pointer;
+    }
+    
+    .signup h2{
+        font-size: 50px;
+        margin-left: 45px;
+    }
+    .signup #email{
+        width: 250px;
+    height: 25px;
+       
+    }
+    .signup #password{
+    width: 250px;
+    height: 25px;
+    }
+    .signup {
+        padding: 100px;
+    }
+    #passlab{
+        padding: 20px;
+    }
+    #maillab{
+    padding: 20px;
+    }
+    .check {
+    margin: 20px;
+    }
+    

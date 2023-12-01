@@ -84,8 +84,8 @@ function displaylist(){
   var doct1 = localStorage.getItem('doctor');
   var doct = JSON.parse(doct1);
   for (let index = 0; index < doct.listpatients.length; index++) {
-    $('#add').append(`<li> <span>${doct.listpatients[index].name}</span> <span>${doct.listpatients[index].consultation}</span>
-     <span>${doct.listpatients[index].prescription}</span></li>`) 
+    $('#add').append(`<li> <span>${doct.listpatients[index].name}</span> <span>${doct.listpatients[index].email}</span>
+     <span>${doct.listpatients[index].date}</span></li>`) 
   }}
   displaylist()
   var consultation = function(email, description, prescription) {
@@ -96,7 +96,7 @@ function displaylist(){
        if (email === doct.listpatients[index].email) {
          if (!doct.listpatients[index].hasOwnProperty('consultation')) {
            doct.listpatients[index].consultation = [];
-           break;
+           
          }
          doct.listpatients[index].consultation.push({
            description: description,
@@ -120,3 +120,17 @@ function displaylist(){
       consultation(patientemail,description,prescreption)
     console.log(doct);
   });
+  
+  $('#btcons').on('click',function(){
+    const mailpatient=$('#mailpatient').val()
+    const date=$('#dat').val()
+    var doct1 = localStorage.getItem('doctor');
+    var doct = JSON.parse(doct1);
+    for (let index = 0; index < doct.listpatients.length; index++) {
+      if (mailpatient===doct.listpatients[index].email){
+        doct.listpatients[index].date=date
+    }
+  }
+  var DoctorJason = JSON.stringify(doct);
+    localStorage.setItem('doctor', DoctorJason);
+});

@@ -66,16 +66,18 @@ $("#login").on("click", function() {
   
   console.log(doct)
   if("mahdi.abichou@gmail.com"==email && 123456==password){
-      window.location.href="doctor.html";
-      
-      
+      window.location.href="doctor.html";  
   }
+  else{
   for (let index = 0; index < doct.listpatients.length; index++) {
       console.log(doct.listpatients)
       if(doct.listpatients[index].email==email && doct.listpatients[index].password==password){
-          window.location.href="patient.html";
-          
+        return  window.location.href="patient.html";  
       }
+    }
+    
+    alert('credentials are not valid')
+      
   }
 console.log(p)
 });
@@ -83,10 +85,22 @@ function displaylist(){
   $("#add").empty()
   var doct1 = localStorage.getItem('doctor');
   var doct = JSON.parse(doct1);
+  res=[]
   for (let index = 0; index < doct.listpatients.length; index++) {
-    $('#add').append(`<li> <span>${doct.listpatients[index].name}</span> <span>${doct.listpatients[index].email}</span>
-     <span>${doct.listpatients[index].date}</span></li>`) 
+    if(!(doct.listpatients[index].date===undefined)){
+   res.push(doct.listpatients[index])
+   res.sort(function(a,b){
+    return new Date(a.date)-new Date(b.date)
+   })
+   console.log(res);
   }}
+  for (let index = 0; index < res.length; index++) {
+    $('#add').append(`<li> <span>${res[index].name}</span> <span>${res[index].email}</span>
+<span>${res[index].date}</span></li>`) 
+    
+  }
+}
+
   displaylist()
   var consultation = function(email, description, prescription) {
     var doct1 = localStorage.getItem('doctor');
